@@ -1,25 +1,27 @@
 name: sa_recipes
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' 
 
-version: 1.0.0+1
+version: 1.1.0+2
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
+  sdk: ">=2.17.6 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  google_mobile_ads: ^1.0.0
 
-  cupertino_icons: ^1.0.2
+  google_mobile_ads: ^5.1.0  # Updated to the latest version
+  cupertino_icons: ^1.0.8  # Updated to the latest version
+  # Other dependencies as needed...
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0  # Updated to the latest version
+  # Other dev dependencies as needed...
 
 flutter:
   uses-material-design: true

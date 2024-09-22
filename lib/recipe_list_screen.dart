@@ -92,7 +92,7 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
                               height: 200.0,
                               fit: BoxFit.cover,
                             ),
-                            const SizedBox(height: 8.0),
+                            SizedBox(height: 8.0),
                             Text(
                               recipe.title,
                               style: const TextStyle(
@@ -100,13 +100,13 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
                                 fontSize: 18.0,
                               ),
                             ),
-                            const SizedBox(height: 4.0),
+                            SizedBox(height: 4.0),
                             Text(
                               recipe.description,
                               maxLines: 3,
                               overflow: TextOverflow.ellipsis,
                             ),
-                            const SizedBox(height: 4.0),
+                            SizedBox(height: 4.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[

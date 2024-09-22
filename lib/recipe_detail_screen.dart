@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'recipe.dart';
 
 class RecipeDetailScreen extends StatelessWidget {
@@ -27,7 +26,7 @@ class RecipeDetailScreen extends StatelessWidget {
             SizedBox(height: 10),
             Text(
               'Ingredients',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.headlineSmall, // Updated
             ),
             SizedBox(height: 10),
             Container(
@@ -41,7 +40,7 @@ class RecipeDetailScreen extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: ListView.builder(
                 itemBuilder: (ctx, index) => Card(
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).colorScheme.secondary, // Updated
                   child: Padding(
                     padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                     child: Text(recipe.ingredients[index]),
@@ -53,7 +52,7 @@ class RecipeDetailScreen extends StatelessWidget {
             SizedBox(height: 10),
             Text(
               'Steps',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.headlineSmall, // Updated
             ),
             SizedBox(height: 10),
             Container(
